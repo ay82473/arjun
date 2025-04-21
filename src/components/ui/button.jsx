@@ -8,7 +8,7 @@ export function Button({ children, onClick, variant = "primary", className = "" 
   };
 
   return (
-    <button onClick={onClick} className={\`\${base} \${variants[variant]} \${className}\`}>
+    <button onClick={onClick} className={`${base} ${variants[variant]} ${className}`}>
       {children}
     </button>
   );
