@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs";
+import { Card, CardContent } from "./components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs";
 import { Button } from "./components/ui/button";
 
 export default function PortfolioLibrary() {
