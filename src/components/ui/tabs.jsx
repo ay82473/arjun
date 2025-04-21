@@ -12,11 +12,9 @@ export function TabsTrigger({ value, activeTab, setActiveTab, children }) {
   return (
     <button
       onClick={() => setActiveTab(value)}
-      className={
-        value === activeTab
-          ? "px-4 py-2 bg-blue-600 text-white rounded"
-          : "px-4 py-2 bg-gray-200 text-gray-800 rounded"
-      }
+      className={`px-4 py-2 rounded font-medium ${
+        value === activeTab ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-800"
+      }`}
     >
       {children}
     </button>
@@ -24,5 +22,5 @@ export function TabsTrigger({ value, activeTab, setActiveTab, children }) {
 }
 
 export function TabsContent({ value, activeTab, children }) {
-  return value === activeTab ? <div className="mt-4">{children}</div> : null;
+  return value === activeTab ? <div className="mt-6">{children}</div> : null;
 }
