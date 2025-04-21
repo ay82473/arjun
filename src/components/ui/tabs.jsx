@@ -20,4 +20,5 @@ export function TabsTrigger({ value, activeTab, setActiveTab, children }) {
 }
 
 export function TabsContent({ value, activeTab, children }) {
-  return value === activeTab ? <div className="mt-6">{children}</div> : null
+  return value === activeTab ? <div className="mt-6">{children}</div> : null;
+}
